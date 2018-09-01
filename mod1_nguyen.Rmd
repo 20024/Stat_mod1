@@ -1,0 +1,61 @@
+---
+title: "mod1_nguyen"
+author: "Lyn Nguyen"
+date: "9/1/2018"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+chooseCRANmirror(graphics = FALSE, ind=1)
+knitr::opts_chunk$set(echo = TRUE)
+
+install.packages("ggplot2")
+library(ggplot2)
+
+wdir <- "/Users/LynHNguyen/JHU/Stat/mod1_nguyen"
+setwd(wdir)
+```
+
+## sample vector 
+```{r sample data, echo = FALSE}
+sample <- c(1.01, -0.15, -0.45, 1.69, -0.23,
+            -0.76, -1.10, -0.73,  1.90, -1.70, 
+            1.52, -2.13, -1.08, -0.50,  1.11, 
+            -0.44, -1.92, -1.50, -1.06,  0.20)
+sample
+```
+
+## Base R Histogram
+
+```{r}
+hist(sample)
+```
+
+## ggplot2 Histogram
+
+```{r ggplot2}
+df <- as.data.frame(sample)
+histogram <- ggplot(data = df, aes(x = df$sample )) + 
+  geom_histogram(binwidth = .25)
+histogram
+```
+
+```{r}
+# ! [ ](Users/LynHNguyen/JHU/Stat/mod1_nguyen/meme.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+knitr::include_graphics("meme.png")
+```
+
