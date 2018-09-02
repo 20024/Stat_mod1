@@ -17,7 +17,7 @@ wdir <- "/Users/LynHNguyen/JHU/Stat/mod1_nguyen"
 setwd(wdir)
 ```
 
-## sample vector 
+## Sample Vector 
 ```{r sample data, echo = FALSE}
 sample <- c(1.01, -0.15, -0.45, 1.69, -0.23,
             -0.76, -1.10, -0.73,  1.90, -1.70, 
@@ -41,21 +41,35 @@ histogram <- ggplot(data = df, aes(x = df$sample )) +
 histogram
 ```
 
-```{r}
-# ! [ ](Users/LynHNguyen/JHU/Stat/mod1_nguyen/meme.png)
+***
 
+# Chapter 2.2 HW: 
+4, 8, 12, 16, 20, 
+24, 34, 36, 40
 
-
-
-
-
-
-
-
-
-
-
-
-knitr::include_graphics("meme.png")
+```{r, echo = FALSE, out.width = "95%"}
+knitr::include_graphics("hw1.1.png", dpi = 100)
 ```
 
+```{r, echo = FALSE}
+knitr::include_graphics("hw1.2.png", dpi = 100)
+```
+
+```{r, echo = FALSE}
+knitr::include_graphics("hw1.3.png", dpi = 100)
+```
+
+```{r, echo = FALSE}
+knitr::include_graphics("hw1.4.png", dpi = 100)
+```
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+```{r out.width = "30%", echo = FALSE}
+knitr::include_graphics("meme.png", dpi = 100)
+
+```
